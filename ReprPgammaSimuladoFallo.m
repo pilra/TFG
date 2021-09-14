@@ -17,7 +17,7 @@ A=zeros(1,4);
 P=zeros(1,2);
 
 for k=1:rep
-    [coste,deg,tiempo,insp,p]=cost3(P(size(P,1),1),T,M,L,cc,cp,ci,c,beta,Tf,N);
+    [coste,deg,tiempo,insp,p]=cost2(P(size(P,1),1),T,M,L,cc,cp,ci,c,beta,Tf,N);
     P=cat(1,P,[p(:,1) p(:,2)]);
 end
 P=cat(1,P,[P(size(P,1),1) 0]);

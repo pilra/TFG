@@ -70,7 +70,7 @@ if (b==1)
     lines(t,p.MM[i,],type='s',lwd=2.5,col='red')
     legend('topleft',
            legend=c(paste('Datos dispositivo', i),
-                    'Estimación'),
+                    'Simulación con los parámetros estimados'),
            col=c('black','red'),lty=1)
   }
 }
@@ -103,7 +103,8 @@ for (i in 1:nrow(data))
        ylab="Deterioro acumulado (mm)")
   lines(t,p.MV[i,],type='s',lwd=2.5,col='red')
   legend('topleft',
-         legend=c(paste('Datos dispositivo', i),'Estimación'),
+         legend=c(paste('Datos dispositivo', i),
+                  'Simulación con los parámetros estimados'),
          col=c('black','red'),lty=1)
 }
 
@@ -161,9 +162,9 @@ for (i in 1:nrow(data))
   }
   
   legend('topleft',legend=c(paste('Datos dispositivo', i),
-                            'Estimación algoritmo genético',
-                            'Estimación método Nelder-Mead',
-                            'Estimación simulated annealing'),
+                            'Algoritmo genético',
+                            'Método Nelder-Mead',
+                            'Simulated annealing'),
          col=c('black',cols),lty=1,cex=0.75)
 }
 
@@ -190,9 +191,9 @@ for (i in 1:nrow(data))
     lines(t,p.MM[i,],type='s',lwd=2.5,col=cols[5])
     legend('topleft',
            legend=c(paste('Datos dispositivo', i),
-                    'Estimación algoritmo genético',
-                    'Estimación método Nelder-Mead',
-                    'Estimación simulated annealing',
+                    'Algoritmo genético',
+                    'Método Nelder-Mead',
+                    'Simulated annealing',
                     'Método de máxima verosimilitud',
                     'Método de los momentos'),
            col=c('black',cols),lty=1,cex=0.75)
@@ -201,9 +202,9 @@ for (i in 1:nrow(data))
   {
     legend('topleft',
            legend=c(paste('Datos dispositivo', i),
-                    'Estimación algoritmo genético',
-                    'Estimación método Nelder-Mead',
-                    'Estimación simulated annealing',
+                    'Algoritmo genético',
+                    'Método Nelder-Mead',
+                    'Simulated annealing',
                     'Método de máxima verosimilitud'),
            col=c('black',cols[1:4]),lty=1,cex=0.75)
   }
